@@ -17,24 +17,24 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  margin: 72px;
-  .title {
-    font-size: 4.8em;
+  padding: 10vh 0 72px 72px;
+  h1 {
+    font-size: 5.2rem;
     text-transform: uppercase;
     width: 70%;
     letter-spacing: 5px;
   }
   .bottom {
     h3 {
-      font-size: 1.4em;
-      width: 50%;
+      font-size: 20px;
+      width: 46%;
     }
     p {
-      font-size: 1.2em;
+      font-size: 16px;
+      font-weight: 600;
       margin: 20px 0;
-      width: 60%;
+      width: 54%;
     }
-
     h3,
     p {
       line-height: 1.2;
@@ -42,7 +42,8 @@ header {
     }
     nav {
       margin-bottom: 100px;
-      width: 75%;
+      width: 70%;
+      font-size: 15px;
       ul {
         display: flex;
         flex-wrap: wrap;
@@ -72,7 +73,7 @@ main {
     align-items: center;
     color: white;
     .wrapper {
-      width: 80%;
+      width: 75%;
 
       .movie__header {
         display: flex;
@@ -80,13 +81,15 @@ main {
         align-items: flex-end;
         margin-bottom: 20px;
         .movie__title {
-          font-size: 2em;
+          font-size: 24px;
           text-transform: uppercase;
         }
         .movie__author {
+          font-size: 16px;
           font-weight: 600;
         }
       }
+
       img {
         width: 100%;
         box-shadow: 0 80px 80px -80px #000, 0 0 12px rgba(0, 0, 0, 0.06),
@@ -97,8 +100,7 @@ main {
         justify-content: flex-end;
         margin-top: 20px;
         span {
-          margin-left: 10px;
-          font-weight: 600;
+          margin-right: 10px;
         }
       }
     }
