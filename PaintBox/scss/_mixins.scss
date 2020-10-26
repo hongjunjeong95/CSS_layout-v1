@@ -1,0 +1,23 @@
+@mixin linkBox($color, $hoverColor){
+  text-transform: uppercase;
+  padding:0 50px;
+  border:1px solid $color;
+  color:$color;
+  cursor: pointer;
+  font-weight: 500;
+  font-family: "proxima-nova","Helvetica","Arial",sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  height: 55px;
+  line-height: 55px;
+  letter-spacing: 2.2px;
+  max-width: 100%;
+  min-width: 240px;
+  text-align: center;
+  margin-top:50px;
+  &:hover{
+    background-color: $color;
+    color:$hoverColor;
+    transition:background 0.2s linear, color 0.2s linear;
+  }
+}
