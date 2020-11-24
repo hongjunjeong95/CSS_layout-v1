@@ -1,0 +1,201 @@
+@import "_variables";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0 45px;
+}
+
+header {
+  background-color: black;
+  nav {
+    ul {
+      border: 1px solid black;
+      display: grid;
+      gap: 1px;
+      grid-template-columns: repeat(3, 2fr) 1fr 1fr;
+      grid-template-rows: repeat(2, 60px);
+      margin-top: 46px;
+      margin-bottom: 80px;
+      font-weight: 600;
+      font-size: 20px;
+      li {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:nth-child(2) {
+          grid-column: span 2;
+          text-transform: uppercase;
+        }
+        &:last-child {
+          grid-column: span 2;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  text-align: center;
+  width: 100%;
+  // height: 100vh;
+  margin-bottom: 145px;
+  h1 {
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+  h6 {
+    margin-bottom: 55px;
+  }
+  .hero__image {
+    background-image: url("https://source.unsplash.com/random?people/1");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+}
+
+.arrivals {
+  margin-bottom: 150px;
+  .arrivals__title {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .wrapper {
+    border: 1px solid black;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 8fr 1fr;
+    height: 100vh;
+    gap: 1px;
+    .product {
+      background-color: white; // width: 100%;
+      &:nth-child(1) {
+        .product__photo {
+          background-image: url("https://source.unsplash.com/random?people/2");
+        }
+      }
+      &:nth-child(2) {
+        .product__photo {
+          background-image: url("https://source.unsplash.com/random?people/3");
+        }
+      }
+      &:nth-child(3) {
+        .product__photo {
+          background-image: url("https://source.unsplash.com/random?people/4");
+        }
+      }
+      &:nth-child(4) {
+        .product__photo {
+          background-image: url("https://source.unsplash.com/random?people/5");
+        }
+      }
+      .product__photo {
+        height: 80%;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 20px;
+      }
+      .product__data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20px;
+        .product__name {
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .arrivals__category {
+      background-color: white;
+      grid-column: span 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      font-weight: 600;
+    }
+  }
+}
+
+footer {
+  border: 1px solid black;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 1px;
+  margin-bottom: 50px;
+  .footer__newsletter,
+  .footer__shopping,
+  .footer__company {
+    padding: 30px;
+    background-color: white;
+  }
+  .footer__newsletter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3 {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    form {
+      border: 1px solid black;
+      background-color: black;
+      display: grid;
+      grid-template-columns: 3fr 1fr 1fr;
+      gap: 1px;
+      input {
+        all: unset;
+        background-color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      input[type="button"] {
+        font-weight: 600;
+        font-size: 14px;
+      }
+    }
+  }
+  .footer__shopping,
+  .footer__company {
+    h3 {
+      font-weight: 600;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      opacity: 0.8;
+    }
+  }
+  .info {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 14px;
+    background-color: white;
+    padding: 10px 30px;
+    .copy {
+      place-self: center center;
+    }
+  }
+}
